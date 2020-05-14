@@ -51,7 +51,7 @@ describe('ProductPageComponent', () => {
 
     const ProductPageFixture = TestBed.createComponent(ProductPageComponent);
     ProductPageFixture.detectChanges();
-    
+
     if (ProductPageFixture.nativeElement.querySelector('div.row').querySelector('app-product-description')) {
       since('You haven\'t added the `app-product-description` selector in the right spot in the ProductPageComponent.').expect(ProductPageFixture.nativeElement.querySelector('div.row').querySelector('app-product-description').nodeName).toBe('APP-PRODUCT-DESCRIPTION');
     } else {
